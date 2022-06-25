@@ -55,7 +55,7 @@
     <!-- Основний контент -->
     <main class="main">
       <!-- Секция 1 - Герой -->
-      <section class="hero section">
+      <section class="hero section overlay">
         <div class="container">
           <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
           <button class="hero-btn" type="button">Заказать услугу</button>
@@ -181,36 +181,74 @@
           </ul>
         </div>
       </section>
+
+      <!-- Clients -->
+      <section class="clients section">
+        <div class="container">
+          <h2 class="section-title">Постоянные клиенты</h2>
+          <ul class="clients-list list">
+            <li class="clients-item">
+              <a class="clients-link" href="#">Client1</a>
+            </li>
+            <li class="clients-item">
+              <a class="clients-link" href="#">Client2</a>
+            </li>
+            <li class="clients-item">
+              <a class="clients-link" href="#">Client3</a>
+            </li>
+            <li class="clients-item">
+              <a class="clients-link" href="#">Client4</a>
+            </li>
+            <li class="clients-item">
+              <a class="clients-link" href="#">Client5</a>
+            </li>
+            <li class="clients-item">
+              <a class="clients-link" href="#">Client6</a>
+            </li>
+          </ul>
+        </div>
+      </section>
     </main>
     <!-- Підвал -->
     <footer class="footer">
-      <div class="container">
-        <a class="logo" href="index.html"
-          ><span class="logo-accent">Web</span>Studio</a
-        >
-        <address class="address">
-          <ul class="address-list list">
-            <li class="address-li">
-              <a
-                class="address-map"
-                href="https://goo.gl/maps/xdUedfpS9vvNKyE69"
-                target="_blank"
-                rel="noopener nofollow noreferrer"
-                >г. Киев, пр-т Леси Украинки, 26</a
-              >
-            </li>
-            <li class="address-li">
-              <a class="address-mail" href="mailto:info@example.com"
-                >info@example.com</a
-              >
-            </li>
-            <li class="address-li">
-              <a class="address-tel" href="tel:+380991111111"
-                >+38 099 111 11 11</a
-              >
-            </li>
+      <div class="container footer-content">
+        <div class="footer-logo-address">
+          <a class="logo" href="index.html"
+            ><span class="logo-accent">Web</span>Studio</a
+          >
+          <address class="address">
+            <ul class="address-list list">
+              <li class="address-li">
+                <a
+                  class="address-map"
+                  href="https://goo.gl/maps/xdUedfpS9vvNKyE69"
+                  target="_blank"
+                  rel="noopener nofollow noreferrer"
+                  >г. Киев, пр-т Леси Украинки, 26</a
+                >
+              </li>
+              <li class="address-li">
+                <a class="address-mail" href="mailto:info@example.com"
+                  >info@example.com</a
+                >
+              </li>
+              <li class="address-li">
+                <a class="address-tel" href="tel:+380991111111"
+                  >+38 099 111 11 11</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="footer-socials">
+          <p class="footer-appeal">Присоединяйтесь</p>
+          <ul class="footer-social-list list">
+            <li><a href="#" aria-label="Instagram link"></a></li>
+            <li><a href="#" aria-label="Twitter link"></a></li>
+            <li><a href="#" aria-label="Facebook link"></a></li>
+            <li><a href="#" aria-label="LinkedIn link"></a></li>
           </ul>
-        </address>
+        </div>
       </div>
     </footer>
   </body>

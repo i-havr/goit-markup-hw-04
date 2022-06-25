@@ -191,12 +191,27 @@ ul {
 /* Main */
 
 /* Hero */
-.hero {
+
+.overlay {
+  background-color: #c4c4c4;
+  max-width: 1600px;
+  height: 600px;
   padding-top: 200px;
   padding-bottom: 200px;
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
-  background-color: var(--other-bg);
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero-img.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
+
 .hero-title {
   width: 696px;
   margin-top: 0;
@@ -213,22 +228,19 @@ ul {
 
 .hero-btn {
   display: inline-block;
-  /* display: flex; */
   padding: 10px 32px;
-  min-width: 180px;
-  /* height: 50px; */
+  min-width: 200px;
   font-family: inherit;
   color: var(--white-text-color);
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
-  align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
   background-color: var(--accent-bg);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  border: 1px solid transparent;
+  border-width: 0px;
   cursor: pointer;
 }
 
@@ -242,7 +254,7 @@ ul {
   margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.2;
+  line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
 }
@@ -332,7 +344,38 @@ ul {
   padding-bottom: 30px;
 }
 
+/* Clients */
+
+.clients-list {
+  display: flex;
+}
+
+.clients-item {
+  width: 170px;
+  height: 92px;
+  padding: 16px 32px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+
+.clients-item + .clients-item {
+  margin-left: 30px;
+}
+
+.clients-link {
+  text-decoration: none;
+}
+
 /* Footer */
+
+.footer-content {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer-socials {
+  margin-left: 70px;
+}
 
 .footer a {
   text-decoration: none;
@@ -371,6 +414,19 @@ ul {
 .address-mail,
 .address-tel {
   color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-appeal {
+  font-weight: 700;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--white-text-color);
+}
+
+.footer-social-list {
+  display: flex;
+  color: var(--white-text-color);
 }
 
 /* Portfolio */
