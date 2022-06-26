@@ -426,6 +426,7 @@ img {
 .clients-link:hover,
 .clients-link:focus {
   fill: var(--links-accent-text-color);
+  border: 1px solid var(--links-accent-text-color);
 }
 
 /* Footer */
